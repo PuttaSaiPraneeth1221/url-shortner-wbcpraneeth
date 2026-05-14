@@ -20,7 +20,7 @@ export default function Response({ response }) {
     downloadLink.download = "qr-code.png"
     downloadLink.click()
   }
-  
+
   return (
     <div
       style={{
@@ -39,7 +39,7 @@ export default function Response({ response }) {
       <QRCodeCanvas
         id="qr-code"
         value={shortUrl}
-        size={220}
+        size={220}          
       />
 
       <button onClick={downloadQR}>
