@@ -4,8 +4,7 @@ import { QRCodeCanvas } from 'qrcode.react'
 export default function Response({ response }) {
 
   const shortUrl =
-    "https://url-shortener-bootcamp.onrender.com/api/s/" +
-    response.shortCode
+    import.meta.env.VITE_DEV_PROXY + "/api/s/" + response.shortCode
 
   const downloadQR = () => {
     const canvas = document.getElementById("qr-code")
